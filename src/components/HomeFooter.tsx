@@ -10,7 +10,7 @@ export default function HomeFooter() {
   return (
     <footer className="home-footer">
       <div className="home-footer-brand">
-        <span className="home-footer-logo">8Win</span>
+        <span className="home-footer-logo">Momo</span>
         <p className="home-footer-slogan">{t('footer.slogan')}</p>
         <p className="home-footer-desc">{t('footer.desc')}</p>
         <span className="home-footer-badge">{t('footer.licensed')}</span>

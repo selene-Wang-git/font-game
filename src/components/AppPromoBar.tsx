@@ -13,10 +13,10 @@ export default function AppPromoBar({ onClose, onDownload }: AppPromoBarProps) {
   return (
     <div className="app-promo-bar">
       <div className="promo-left">
-        <span className="promo-logo">8win</span>
+        <span className="promo-logo">momo</span>
       </div>
       <div className="promo-center">
-        <span className="promo-name">8Win</span>
+        <span className="promo-name">Momo</span>
         <div className="promo-stars">
           {Array.from({ length: 5 }).map((_, i) => (
             <Star key={i} size={10} fill="#ffc107" color="#ffc107" />

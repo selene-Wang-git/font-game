@@ -189,9 +189,9 @@ const ja: Messages = {
     faq: 'よくある質問',
     channels: {
       live: { name: 'オンラインサポート', desc: '24時間即時対応' },
-      telegram: { name: 'Telegram', desc: '@8win_support' },
+      telegram: { name: 'Telegram', desc: '@momo_support' },
       whatsapp: { name: 'WhatsApp', desc: '+60 12-345 6789' },
-      email: { name: 'メール', desc: 'support@8win.com' },
+      email: { name: 'メール', desc: 'support@momo.com' },
     },
     faqs: {
       1: { q: '登録方法は？', a: '右上の「登録」をクリックし、6文字のユーザー名を入力してください。' },
@@ -268,7 +268,7 @@ const ja: Messages = {
   footer: {
     slogan: '勝利はここから',
     desc: '安心のオンラインエンタメ — いつでもどこでもプレイ。',
-    downloadTitle: '8Winアプリをダウンロード',
+    downloadTitle: 'Momoアプリをダウンロード',
     downloadDesc: 'より速く、より安定、より便利に',
     downloadIos: 'App Store',
     downloadAndroid: 'Google Play',
@@ -281,13 +281,13 @@ const ja: Messages = {
       youtube: 'YouTube',
     },
     licensed: 'ライセンス取得 · 資金安全',
-    copyright: '© {{year}} 8Win. All rights reserved.',
+    copyright: '© {{year}} Momo. All rights reserved.',
     legal: '責任あるプレイを。18歳未満はご利用いただけません。',
   },
   carousel: { slide: 'スライド {{n}}' },
   disclaimer: {
     title: '免責事項',
-    intro: '8Winへようこそ。ご利用前に以下の条項をお読みください：',
+    intro: 'Momoへようこそ。ご利用前に以下の条項をお読みください：',
     items: [
       '本プラットフォームは18歳以上の方の娯楽目的のみにご利用いただけます。',
       '経済的余裕の範囲で責任あるプレイを心がけ、のめり込まないでください。',
@@ -299,7 +299,7 @@ const ja: Messages = {
     ageBadge: '18+',
   },
   downloadModal: {
-    title: '8Winアプリをダウンロード',
+    title: 'Momoアプリをダウンロード',
     subtitle: 'いつでもどこでも、最高のエンタメ体験',
     bonus: '🎁 新規DLでボーナス',
     features: ['高速スムーズ', '安全暗号化', '限定ボーナス'],

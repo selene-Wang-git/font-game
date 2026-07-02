@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import type { CategoryId } from '../types';
 
-const ORDER_KEY = '8win_category_section_order';
+const ORDER_KEY = 'momo_category_section_order';
 
 function mergeOrder(stored: CategoryId[], defaults: CategoryId[]): CategoryId[] {
   const valid = stored.filter((id) => defaults.includes(id));

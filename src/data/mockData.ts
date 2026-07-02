@@ -293,7 +293,7 @@ export const paymentMethodsMeta: Omit<PaymentMethod, 'name'>[] = [
 
 export const quickAmounts = [50, 100, 200, 500, 1000, 2000];
 
-export const DISCLAIMER_ACCEPTED_KEY = '8win_disclaimer_accepted';
+export const DISCLAIMER_ACCEPTED_KEY = 'momo_disclaimer_accepted';
 
 export const bottomNavStructure: { id: NavId; icon: BottomNavItem['icon'] }[] = [
   { id: 'home', icon: 'Home' },
@@ -304,14 +304,14 @@ export const bottomNavStructure: { id: NavId; icon: BottomNavItem['icon'] }[] = 
 ];
 
 export const appDownloadLinks = {
-  ios: 'https://apps.apple.com/app/8win',
-  android: 'https://play.google.com/store/apps/details?id=com.eightwin.app',
+  ios: 'https://apps.apple.com/app/momo',
+  android: 'https://play.google.com/store/apps/details?id=com.momo.app',
 };
 
 export const footerSocialLinks = [
-  { id: 'telegram', icon: '✈️', url: 'https://t.me/8win_support' },
+  { id: 'telegram', icon: '✈️', url: 'https://t.me/momo_support' },
   { id: 'whatsapp', icon: '📞', url: 'https://wa.me/60123456789' },
-  { id: 'facebook', icon: '📘', url: 'https://facebook.com/8win' },
-  { id: 'instagram', icon: '📷', url: 'https://instagram.com/8win' },
-  { id: 'youtube', icon: '▶️', url: 'https://youtube.com/@8win' },
+  { id: 'facebook', icon: '📘', url: 'https://facebook.com/momo' },
+  { id: 'instagram', icon: '📷', url: 'https://instagram.com/momo' },
+  { id: 'youtube', icon: '▶️', url: 'https://youtube.com/@momo' },
 ] as const;

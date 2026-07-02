@@ -7,7 +7,7 @@ import { formatBalance } from '../utils/formatBalance';
 import DepositSuccessModal from '../components/DepositSuccessModal';
 import './DepositPage.css';
 
-const BALANCE_HIDDEN_KEY = '8win_balance_hidden';
+const BALANCE_HIDDEN_KEY = 'momo_balance_hidden';
 
 export default function DepositPage() {
   const t = useT();

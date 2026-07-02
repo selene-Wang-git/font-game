@@ -36,7 +36,7 @@ interface ThemeContextValue extends ThemeState {
   removeBgColorFromHistory: (bgColor: string) => void;
 }
 
-const THEME_KEY = '8win_theme';
+const THEME_KEY = 'momo_theme';
 
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 

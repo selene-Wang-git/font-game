@@ -31,9 +31,9 @@ interface AuthContextValue {
   closeAuthModal: () => void;
 }
 
-const STORAGE_KEY = '8win_user';
-const BALANCE_KEY = '8win_balances';
-const AVATAR_KEY = '8win_avatars';
+const STORAGE_KEY = 'momo_user';
+const BALANCE_KEY = 'momo_balances';
+const AVATAR_KEY = 'momo_avatars';
 const MAX_AVATAR_SIZE = 2 * 1024 * 1024;
 
 const AuthContext = createContext<AuthContextValue | null>(null);

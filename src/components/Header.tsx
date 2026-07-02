@@ -55,7 +55,7 @@ export default function Header({
         </button>
       )}
 
-      <span className="header-logo">{title ?? '8win'}</span>
+      <span className="header-logo">{title ?? 'momo'}</span>
 
       <button
         type="button"

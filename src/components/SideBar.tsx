@@ -27,7 +27,7 @@ export default function SideBar({ open, onClose }: SideBarProps) {
         aria-label={t('sidebar.label')}
       >
         <div className="sidebar-header">
-          <span className="sidebar-logo">8win</span>
+          <span className="sidebar-logo">momo</span>
           <button
             type="button"
             className="sidebar-close"

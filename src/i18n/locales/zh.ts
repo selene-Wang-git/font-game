@@ -187,9 +187,9 @@ const zh = {
     faq: '常见问题',
     channels: {
       live: { name: '在线客服', desc: '7×24 小时即时回复' },
-      telegram: { name: 'Telegram', desc: '@8win_support' },
+      telegram: { name: 'Telegram', desc: '@momo_support' },
       whatsapp: { name: 'WhatsApp', desc: '+60 12-345 6789' },
-      email: { name: '邮件支持', desc: 'support@8win.com' },
+      email: { name: '邮件支持', desc: 'support@momo.com' },
     },
     faqs: {
       1: { q: '如何注册账号？', a: '点击右上角「注册」按钮，输入 6 位用户名即可完成注册。' },
@@ -266,7 +266,7 @@ const zh = {
   footer: {
     slogan: '赢，从这里开始',
     desc: '安全可靠的在线娱乐平台，随时随地畅享精彩游戏。',
-    downloadTitle: '下载 8Win App',
+    downloadTitle: '下载 Momo App',
     downloadDesc: '更快、更稳、更便捷',
     downloadIos: 'App Store',
     downloadAndroid: 'Google Play',
@@ -279,12 +279,12 @@ const zh = {
       youtube: 'YouTube',
     },
     licensed: '持牌运营 · 资金安全有保障',
-    copyright: '© {{year}} 8Win. 保留所有权利。',
+    copyright: '© {{year}} Momo. 保留所有权利。',
     legal: '请理性娱乐，未满18岁禁止参与。',
   },
   disclaimer: {
     title: '免责声明',
-    intro: '欢迎访问 8Win。在继续使用本网站前，请仔细阅读以下条款：',
+    intro: '欢迎访问 Momo。在继续使用本网站前，请仔细阅读以下条款：',
     items: [
       '本平台仅供年满 18 周岁的用户娱乐使用。',
       '请根据个人经济能力理性参与，切勿沉迷。',
@@ -296,7 +296,7 @@ const zh = {
     ageBadge: '18+',
   },
   downloadModal: {
-    title: '下载 8Win App',
+    title: '下载 Momo App',
     subtitle: '随时随地，畅享极致娱乐',
     bonus: '🎁 新人下载立享礼包',
     features: ['极速流畅', '安全加密', '专属红利'],

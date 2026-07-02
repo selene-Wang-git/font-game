@@ -52,7 +52,7 @@ export default function DownloadAppModal({ onClose }: DownloadAppModalProps) {
 
         <div className="download-modal-phone">
           <div className="download-modal-phone-screen">
-            <span className="download-modal-phone-logo">8Win</span>
+            <span className="download-modal-phone-logo">Momo</span>
             <span className="download-modal-phone-emoji">🎰</span>
           </div>
         </div>

@@ -189,9 +189,9 @@ const en: Messages = {
     faq: 'FAQ',
     channels: {
       live: { name: 'Live Chat', desc: '24/7 instant response' },
-      telegram: { name: 'Telegram', desc: '@8win_support' },
+      telegram: { name: 'Telegram', desc: '@momo_support' },
       whatsapp: { name: 'WhatsApp', desc: '+60 12-345 6789' },
-      email: { name: 'Email', desc: 'support@8win.com' },
+      email: { name: 'Email', desc: 'support@momo.com' },
     },
     faqs: {
       1: { q: 'How to register?', a: 'Click "Sign Up" and enter a 6-character username.' },
@@ -268,7 +268,7 @@ const en: Messages = {
   footer: {
     slogan: 'Win starts here',
     desc: 'A trusted entertainment platform — play anytime, anywhere.',
-    downloadTitle: 'Get the 8Win App',
+    downloadTitle: 'Get the Momo App',
     downloadDesc: 'Faster, smoother, always with you',
     downloadIos: 'App Store',
     downloadAndroid: 'Google Play',
@@ -281,13 +281,13 @@ const en: Messages = {
       youtube: 'YouTube',
     },
     licensed: 'Licensed operator · Secure funds',
-    copyright: '© {{year}} 8Win. All rights reserved.',
+    copyright: '© {{year}} Momo. All rights reserved.',
     legal: 'Play responsibly. Must be 18+.',
   },
   carousel: { slide: 'Slide {{n}}' },
   disclaimer: {
     title: 'Disclaimer',
-    intro: 'Welcome to 8Win. Please read the following terms before continuing:',
+    intro: 'Welcome to Momo. Please read the following terms before continuing:',
     items: [
       'This platform is for entertainment purposes only and is restricted to users aged 18 and above.',
       'Please play responsibly within your means. Do not gamble beyond your limits.',
@@ -299,7 +299,7 @@ const en: Messages = {
     ageBadge: '18+',
   },
   downloadModal: {
-    title: 'Get the 8Win App',
+    title: 'Get the Momo App',
     subtitle: 'Play anytime, anywhere — the ultimate experience',
     bonus: '🎁 New user download bonus',
     features: ['Lightning fast', 'Secure', 'Exclusive rewards'],

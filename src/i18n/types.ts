@@ -6,4 +6,4 @@ export const locales: { code: Locale; label: string; flag: string }[] = [
   { code: 'ja', label: '日本語', flag: '🇯🇵' },
 ];
 
-export const LOCALE_STORAGE_KEY = '8win_locale';
+export const LOCALE_STORAGE_KEY = 'momo_locale';

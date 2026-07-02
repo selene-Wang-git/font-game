@@ -1,6 +1,6 @@
 import { resolveBgColor } from './palettes';
 
-const BG_HISTORY_KEY = '8win_bg_color_history';
+const BG_HISTORY_KEY = 'momo_bg_color_history';
 const MAX_HISTORY = 12;
 
 export function loadBgColorHistory(): string[] {
