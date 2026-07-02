@@ -1,6 +1,6 @@
 # React 19 + TypeScript 游戏平台手机端
 
-8Win 风格纯前端手机端首页，基于 Vite + React 19 + TypeScript。
+Momo 风格纯前端手机端首页，基于 Vite + React 19 + TypeScript。
 
 ## 启动
 
