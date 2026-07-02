@@ -1,0 +1,65 @@
+.logout-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--overlay-bg);
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logout-confirm-modal {
+  width: 100%;
+  max-width: 300px;
+  background: var(--bg-card-dark);
+  border-radius: 14px;
+  padding: 22px 18px 18px;
+  border: 1px solid var(--border-subtle);
+}
+
+.logout-confirm-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.logout-confirm-message {
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.logout-confirm-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.logout-confirm-cancel,
+.logout-confirm-submit {
+  flex: 1;
+  padding: 11px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+
+.logout-confirm-cancel {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.logout-confirm-submit {
+  background: #e53935;
+  color: #fff;
+}
+
+.logout-confirm-cancel:active,
+.logout-confirm-submit:active {
+  opacity: 0.85;
+}

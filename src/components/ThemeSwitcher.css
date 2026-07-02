@@ -1,0 +1,242 @@
+.theme-switcher {
+  position: relative;
+}
+
+.theme-select {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  color: var(--text-secondary);
+}
+
+.theme-select-preview {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.theme-select-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 1px solid var(--border-subtle);
+}
+
+.theme-palette-section + .theme-palette-section {
+  padding-top: 0;
+}
+
+.theme-select svg {
+  transition: transform 0.2s;
+}
+
+.theme-select .rotated {
+  transform: rotate(180deg);
+}
+
+.theme-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: 220px;
+  background: var(--bg-card-dark);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 200;
+  box-shadow: var(--dropdown-shadow);
+}
+
+.theme-mode-list {
+  list-style: none;
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 13px;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.theme-option:hover,
+.theme-option.active {
+  background: var(--bg-card);
+}
+
+.theme-option.active {
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.theme-palette-section {
+  padding: 10px 12px 12px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.theme-palette-label {
+  display: block;
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.theme-palette-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.theme-swatch {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.theme-swatch:active {
+  transform: scale(0.92);
+}
+
+.theme-swatch.active {
+  border-color: var(--text-primary);
+  box-shadow: 0 0 0 2px var(--bg-card-dark);
+}
+
+.theme-color-picker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  text-align: left;
+  transition: border-color 0.15s;
+}
+
+.theme-color-picker:hover {
+  border-color: var(--accent-gold);
+}
+
+.theme-color-swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  border: 2px solid var(--border-subtle);
+}
+
+.theme-color-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.theme-color-hint {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.theme-color-value {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  letter-spacing: 0.02em;
+}
+
+.theme-color-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.theme-color-apply {
+  width: 100%;
+  margin-top: 8px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  background: var(--accent-gold);
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  transition: opacity 0.15s;
+}
+
+.theme-color-apply:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.theme-color-apply:not(:disabled):active {
+  opacity: 0.85;
+}
+
+.theme-bg-history {
+  margin-top: 10px;
+}
+
+.theme-bg-history-label {
+  display: block;
+  font-size: 10px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.theme-bg-history-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.theme-bg-history-item {
+  position: relative;
+}
+
+.theme-bg-history-swatch {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  border: 2px solid var(--border-subtle);
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.theme-bg-history-swatch.active {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 1px var(--accent-gold);
+}
+
+.theme-bg-history-swatch:active {
+  transform: scale(0.92);
+}
+
+.theme-bg-history-remove {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #e53935;
+  color: #fff;
+  opacity: 0.9;
+  transition: opacity 0.15s, transform 0.15s;
+  z-index: 1;
+}
+
+.theme-bg-history-remove:active {
+  transform: scale(0.9);
+}

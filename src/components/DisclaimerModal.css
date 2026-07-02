@@ -1,0 +1,190 @@
+.disclaimer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: disclaimer-overlay-in 0.3s ease;
+}
+
+@keyframes disclaimer-overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.disclaimer-modal {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  max-height: calc(100dvh - 40px);
+  overflow-y: auto;
+  background: var(--bg-card-dark);
+  border-radius: 16px;
+  padding: 24px 20px 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 193, 7, 0.5);
+  box-shadow:
+    0 0 0 1px rgba(255, 193, 7, 0.12),
+    0 0 32px rgba(255, 193, 7, 0.28),
+    0 0 64px rgba(255, 193, 7, 0.1),
+    0 20px 48px rgba(0, 0, 0, 0.55);
+  animation:
+    disclaimer-modal-in 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    disclaimer-glow 2.6s ease-in-out infinite;
+}
+
+@keyframes disclaimer-modal-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes disclaimer-glow {
+  0%,
+  100% {
+    border-color: rgba(255, 193, 7, 0.4);
+    box-shadow:
+      0 0 0 1px rgba(255, 193, 7, 0.1),
+      0 0 24px rgba(255, 193, 7, 0.22),
+      0 0 48px rgba(255, 193, 7, 0.08),
+      0 20px 48px rgba(0, 0, 0, 0.55);
+  }
+  50% {
+    border-color: rgba(255, 193, 7, 0.75);
+    box-shadow:
+      0 0 0 1px rgba(255, 193, 7, 0.2),
+      0 0 36px rgba(255, 193, 7, 0.38),
+      0 0 72px rgba(255, 193, 7, 0.14),
+      0 20px 48px rgba(0, 0, 0, 0.55);
+  }
+}
+
+.disclaimer-glow-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 18px;
+  border: 1px solid transparent;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 193, 7, 0.55),
+      rgba(255, 193, 7, 0.05),
+      rgba(255, 193, 7, 0.45)
+    )
+    border-box;
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.disclaimer-age-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 11px;
+  font-weight: 800;
+  color: #000;
+  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
+  padding: 3px 8px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.4);
+}
+
+.disclaimer-icon-wrap {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-gold);
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.35);
+  box-shadow: 0 0 16px rgba(255, 193, 7, 0.25);
+}
+
+.disclaimer-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--accent-gold);
+}
+
+.disclaimer-intro {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.disclaimer-list {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.disclaimer-list li {
+  position: relative;
+  font-size: 12px;
+  color: var(--text-primary);
+  line-height: 1.5;
+  padding: 8px 0 8px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.disclaimer-list li:last-child {
+  border-bottom: none;
+}
+
+.disclaimer-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  box-shadow: 0 0 6px rgba(255, 193, 7, 0.6);
+}
+
+.disclaimer-footer {
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.disclaimer-accept {
+  width: 100%;
+  padding: 13px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 4px 18px rgba(255, 193, 7, 0.35);
+}
+
+.disclaimer-accept:active {
+  opacity: 0.92;
+  transform: scale(0.98);
+}

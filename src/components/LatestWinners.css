@@ -1,0 +1,143 @@
+.latest-winners {
+  margin-top: 16px;
+  padding: 0 10px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.section-icon {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.winner-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 12px;
+}
+
+.winner-tab {
+  flex: 1;
+  padding: 8px 4px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.winner-tab.active {
+  color: var(--accent-gold);
+  border-bottom-color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.winner-scroll-viewport {
+  overflow: hidden;
+  padding-bottom: 4px;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 16px,
+    #000 calc(100% - 16px),
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 16px,
+    #000 calc(100% - 16px),
+    transparent
+  );
+}
+
+.winner-scroll-track {
+  display: flex;
+  gap: 8px;
+  width: max-content;
+  animation: winner-marquee var(--marquee-duration, 20s) linear infinite;
+  will-change: transform;
+}
+
+.winner-scroll-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes winner-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .winner-scroll-viewport {
+    overflow-x: auto;
+    mask-image: none;
+    -webkit-mask-image: none;
+    scrollbar-width: none;
+  }
+
+  .winner-scroll-viewport::-webkit-scrollbar {
+    display: none;
+  }
+
+  .winner-scroll-track {
+    animation: none;
+  }
+}
+
+.winner-card {
+  flex-shrink: 0;
+  width: 80px;
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 8px 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.winner-thumb {
+  width: 48px;
+  height: 48px;
+  background: var(--bg-card-dark);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.winner-name {
+  font-size: 10px;
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.winner-amount {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-gold);
+}

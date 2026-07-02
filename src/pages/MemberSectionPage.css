@@ -1,0 +1,241 @@
+.member-section-page {
+  padding: 12px 10px 0;
+}
+
+.member-section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.member-section-block {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.member-section-desc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+.member-section-wallet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.member-section-wallet-card {
+  background: var(--bg-card-dark);
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.member-section-label {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.member-section-value {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.member-section-value.gold {
+  color: var(--accent-gold);
+}
+
+.member-section-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.member-section-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--bg-card-dark);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.member-section-btn.primary {
+  background: var(--accent-gold);
+  color: #000;
+  font-weight: 700;
+}
+
+.member-section-list {
+  background: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.member-section-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.member-section-row:last-child {
+  border-bottom: none;
+}
+
+.member-section-row-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.member-section-row-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.member-section-row-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.member-section-row-time {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.member-section-amount {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-gold);
+}
+
+.member-section-status {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.member-section-status.win {
+  background: rgba(76, 175, 80, 0.15);
+  color: #66bb6a;
+}
+
+.member-section-status.lose {
+  background: rgba(239, 83, 80, 0.15);
+  color: #ef5350;
+}
+
+.member-section-status.pending,
+.member-section-status.processing {
+  background: rgba(255, 193, 7, 0.15);
+  color: var(--accent-gold);
+}
+
+.member-section-status.success {
+  background: rgba(76, 175, 80, 0.15);
+  color: #66bb6a;
+}
+
+.member-section-empty {
+  padding: 32px 16px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.vip-card {
+  text-align: center;
+}
+
+.vip-level-badge {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--accent-gold);
+  margin-bottom: 8px;
+}
+
+.vip-progress-wrap {
+  margin: 16px 0;
+}
+
+.vip-progress-bar {
+  height: 8px;
+  background: var(--bg-card-dark);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.vip-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-gold-dark), var(--accent-gold));
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.vip-progress-text {
+  display: block;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.member-section-benefits {
+  list-style: none;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.member-section-benefits li {
+  font-size: 13px;
+  padding: 8px 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.member-section-benefits li::before {
+  content: '✓ ';
+  color: var(--accent-gold);
+  font-weight: 700;
+}
+
+.member-section-setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.member-section-setting-row:last-child {
+  border-bottom: none;
+}
+
+.member-section-setting-value {
+  font-size: 12px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.member-section-link-btn {
+  flex-shrink: 0;
+  padding: 5px 10px;
+  border-radius: 14px;
+  background: var(--bg-card-dark);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent-gold);
+}

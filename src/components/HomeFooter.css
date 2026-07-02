@@ -1,0 +1,135 @@
+.home-footer {
+  margin-top: 24px;
+  padding: 28px 16px 12px;
+  background: var(--bg-card-dark);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.home-footer-brand {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.home-footer-logo {
+  display: block;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--accent-gold);
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.home-footer-slogan {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.home-footer-desc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  max-width: 280px;
+  margin: 0 auto 10px;
+}
+
+.home-footer-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--accent-gold);
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.25);
+}
+
+.home-footer-section {
+  margin-bottom: 22px;
+}
+
+.home-footer-heading {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.home-footer-sub {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.home-footer-downloads {
+  display: flex;
+  gap: 10px;
+}
+
+.home-footer-download-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 8px;
+  border-radius: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+
+.home-footer-download-btn:active {
+  border-color: var(--accent-gold);
+}
+
+.home-footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.home-footer-social-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.home-footer-social-link:active {
+  border-color: var(--accent-gold);
+}
+
+.home-footer-social-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.home-footer-bottom {
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+}
+
+.home-footer-copyright {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.home-footer-legal {
+  font-size: 10px;
+  color: var(--text-secondary);
+  opacity: 0.75;
+  line-height: 1.4;
+}

@@ -1,0 +1,163 @@
+.deposit-success-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--overlay-bg);
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: deposit-success-overlay-in 0.25s ease;
+}
+
+@keyframes deposit-success-overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.deposit-success-overlay.closing {
+  animation: deposit-success-overlay-out 0.4s ease forwards;
+}
+
+@keyframes deposit-success-overlay-out {
+  to {
+    opacity: 0;
+  }
+}
+
+.deposit-success-modal {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  background: var(--bg-card-dark);
+  border-radius: 16px;
+  padding: 28px 22px 22px;
+  text-align: center;
+  border: 1px solid rgba(255, 193, 7, 0.55);
+  box-shadow:
+    0 0 0 1px rgba(255, 193, 7, 0.15),
+    0 0 28px rgba(255, 193, 7, 0.3),
+    0 0 56px rgba(255, 193, 7, 0.12),
+    0 16px 40px rgba(0, 0, 0, 0.45);
+  animation:
+    deposit-success-modal-in 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    deposit-success-glow 2.4s ease-in-out infinite;
+}
+
+@keyframes deposit-success-modal-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.deposit-success-overlay.closing .deposit-success-modal {
+  animation: deposit-success-modal-out 0.4s ease forwards;
+}
+
+@keyframes deposit-success-modal-out {
+  to {
+    opacity: 0;
+    transform: scale(0.94) translateY(8px);
+  }
+}
+
+@keyframes deposit-success-glow {
+  0%,
+  100% {
+    border-color: rgba(255, 193, 7, 0.45);
+    box-shadow:
+      0 0 0 1px rgba(255, 193, 7, 0.12),
+      0 0 24px rgba(255, 193, 7, 0.25),
+      0 0 48px rgba(255, 193, 7, 0.1),
+      0 16px 40px rgba(0, 0, 0, 0.45);
+  }
+  50% {
+    border-color: rgba(255, 193, 7, 0.85);
+    box-shadow:
+      0 0 0 1px rgba(255, 193, 7, 0.25),
+      0 0 36px rgba(255, 193, 7, 0.45),
+      0 0 72px rgba(255, 193, 7, 0.2),
+      0 16px 40px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.deposit-success-glow-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 18px;
+  border: 1px solid transparent;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 193, 7, 0.6),
+      rgba(255, 193, 7, 0.05),
+      rgba(255, 193, 7, 0.5)
+    )
+    border-box;
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+  animation: deposit-success-ring-spin 4s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes deposit-success-ring-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.deposit-success-icon-wrap {
+  position: relative;
+  z-index: 1;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, rgba(255, 193, 7, 0.25), rgba(255, 193, 7, 0.08));
+  color: var(--accent-gold);
+  border: 1px solid rgba(255, 193, 7, 0.4);
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.35);
+}
+
+.deposit-success-title {
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: var(--accent-gold);
+}
+
+.deposit-success-message {
+  position: relative;
+  z-index: 1;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.deposit-success-amount {
+  position: relative;
+  z-index: 1;
+  display: block;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-primary);
+  text-shadow: 0 0 16px rgba(255, 193, 7, 0.35);
+}

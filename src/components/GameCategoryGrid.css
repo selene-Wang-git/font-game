@@ -1,0 +1,124 @@
+@property --category-flow-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.category-section {
+  padding: 12px 10px 0;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.category-card-flow {
+  --category-flow-angle: 0deg;
+  border-radius: 11px;
+  padding: 1.5px;
+  background: conic-gradient(
+    from var(--category-flow-angle),
+    var(--accent-gold) 0deg,
+    color-mix(in srgb, var(--accent-gold) 35%, transparent) 70deg,
+    transparent 140deg,
+    color-mix(in srgb, var(--accent-gold-dark) 45%, transparent) 220deg,
+    var(--accent-gold) 300deg,
+    var(--accent-gold-dark) 360deg
+  );
+  animation: category-flow-border 4s linear infinite;
+}
+
+.category-card-flow.featured {
+  grid-column: span 2;
+}
+
+.category-card {
+  background: var(--bg-card);
+  border-radius: 10px;
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+  min-height: 90px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.15s;
+}
+
+.category-card:active {
+  opacity: 0.85;
+}
+
+.category-card-flow.featured .category-card {
+  min-height: 100px;
+}
+
+.card-info {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.card-icon-sm {
+  font-size: 14px;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.card-desc {
+  font-size: 11px;
+  color: var(--text-secondary);
+  max-width: 120px;
+  line-height: 1.3;
+}
+
+.card-graphic {
+  position: absolute;
+  right: 8px;
+  bottom: 4px;
+  font-size: 48px;
+  opacity: 0.85;
+  line-height: 1;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.category-card-flow.featured .card-graphic {
+  font-size: 64px;
+  right: 16px;
+}
+
+.category-card-flow.featured .card-desc {
+  max-width: 160px;
+}
+
+@keyframes category-flow-border {
+  to {
+    --category-flow-angle: 360deg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .category-card-flow {
+    animation: none;
+    --category-flow-angle: 45deg;
+    background: linear-gradient(
+      135deg,
+      var(--accent-gold),
+      var(--accent-gold-dark)
+    );
+  }
+}

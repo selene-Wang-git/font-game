@@ -1,0 +1,15 @@
+.app {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  min-height: 100dvh;
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.main-content {
+  padding-bottom: calc(var(--nav-height) + 80px);
+}
+
+.app:not(:has(.app-promo-bar)) .header {
+  top: 0;
+}

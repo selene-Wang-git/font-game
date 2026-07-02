@@ -1,0 +1,58 @@
+.lang-switcher {
+  position: relative;
+}
+
+.lang-select {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+}
+
+.lang-select .rotated {
+  transform: rotate(180deg);
+}
+
+.lang-select svg {
+  transition: transform 0.2s;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 130px;
+  background: var(--bg-card-dark);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 200;
+  box-shadow: var(--dropdown-shadow);
+  list-style: none;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 13px;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.lang-option:hover,
+.lang-option.active {
+  background: var(--bg-card);
+}
+
+.lang-option.active {
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.flag {
+  font-size: 16px;
+  line-height: 1;
+}

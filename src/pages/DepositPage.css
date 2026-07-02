@@ -1,0 +1,178 @@
+.deposit-page {
+  padding: 12px 10px 0;
+}
+
+.deposit-balance {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.balance-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.balance-amount {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  flex: 1;
+  min-width: 0;
+}
+
+.balance-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: var(--text-secondary);
+  opacity: 0.45;
+  flex-shrink: 0;
+  transition: opacity 0.15s, color 0.15s;
+}
+
+.balance-toggle:active {
+  opacity: 1;
+  color: var(--text-primary);
+}
+
+.balance-refresh {
+  font-size: 12px;
+  color: var(--accent-gold);
+  padding: 4px 10px;
+  border: 1px solid var(--accent-gold);
+  border-radius: 14px;
+}
+
+.deposit-section {
+  margin-bottom: 18px;
+}
+
+.deposit-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.amount-input-wrap {
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  border-radius: 10px;
+  padding: 0 14px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border-subtle);
+}
+
+.amount-prefix {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-right: 8px;
+}
+
+.amount-input {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 22px;
+  font-weight: 700;
+  padding: 14px 0;
+  outline: none;
+  font-family: inherit;
+  width: 100%;
+}
+
+.amount-input::placeholder {
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.quick-amounts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.quick-amount {
+  padding: 10px;
+  background: var(--bg-card);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.quick-amount.active {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.payment-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 8px;
+  background: var(--bg-card);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.payment-card.active {
+  border-color: var(--accent-gold);
+}
+
+.payment-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.payment-name {
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.payment-hint {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.deposit-submit {
+  width: 100%;
+  padding: 14px;
+  background: var(--accent-gold);
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-top: 8px;
+  transition: opacity 0.15s;
+}
+
+.deposit-submit:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.deposit-submit:not(:disabled):active {
+  opacity: 0.85;
+}
